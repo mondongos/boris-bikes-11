@@ -1,0 +1,11 @@
+Objects - Messages
+
+Person (User)
+Bike - is working
+Docking Station - Release bike
+
+User requests a bike ->
+If the bike is working, the docking station will release the bike
+
+Bike <-- working? --> true/false
+DockingStation <-- release_bike --> a Bike
