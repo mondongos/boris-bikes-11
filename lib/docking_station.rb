@@ -7,4 +7,7 @@ class DockingStation
       return bike
   end
 
+  def receive_bike
+  end
+
 end
