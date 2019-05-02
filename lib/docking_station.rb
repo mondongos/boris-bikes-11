@@ -27,3 +27,4 @@ class DockingStation
     @bike_array
   end
 end
+#so we can commit again
