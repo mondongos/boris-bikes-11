@@ -34,4 +34,9 @@ describe DockingStation do
   it "releasing a bike when bike_array is empty raises an error" do
     expect { subject.release_bike }.to raise_error if subject.bike_array.length == 0
   end
+  it "recieving a bike when bike_array is full raises an error" do
+    full_station = DockingStation.new
+    full_station.station_capacity.times { full_station.receive_bike(Bike.new) }
+    expect { full_station.receive_bike(Bike.new) }.to raise_error
+  end
 end
